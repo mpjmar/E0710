@@ -18,16 +18,12 @@ public class App {
         int arrayRes[] = new int[array.length];
         int j = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
-                arrayRes[j] = array[i];
-                j++;
-            }
+            if (array[i] % 2 == 0)
+                arrayRes[j++] = array[i];
         }
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 != 0) {
-                arrayRes[j] = array[i];
-                j++;
-            }
+            if (array[i] % 2 != 0)
+                arrayRes[j++] = array[i];
         }   
         return arrayRes;
     }
